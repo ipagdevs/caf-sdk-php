@@ -1,0 +1,4 @@
+/vendor/
+*.phpunit
+phpunit.xml
+teste.php
