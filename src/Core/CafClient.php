@@ -1,14 +1,14 @@
 <?php
 
-namespace Yshybashy\Caf\Core;
+namespace Kyc\Caf\Core;
 
-use Yshybashy\Caf\Core\Client;
-use Yshybashy\Caf\Http\Client\GuzzleHttpClient;
-use Yshybashy\Caf\IO\JsonSerializer;
-use Yshybashy\Caf\Model\Onboarding;
-use Yshybashy\Caf\Model\OnboardingRequest;
-use Yshybashy\Caf\Model\Transaction;
-use Yshybashy\Caf\Model\TransactionRequest;
+use Kyc\Caf\Core\Client;
+use Kyc\Caf\Http\Client\GuzzleHttpClient;
+use Kyc\Caf\IO\JsonSerializer;
+use Kyc\Caf\Model\Onboarding;
+use Kyc\Caf\Model\OnboardingRequest;
+use Kyc\Caf\Model\Transaction;
+use Kyc\Caf\Model\TransactionRequest;
 
 class CafClient extends Client
 {

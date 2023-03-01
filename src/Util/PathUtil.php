@@ -1,6 +1,6 @@
 <?php
 
-namespace Yshybashy\Caf\Util;
+namespace Kyc\Caf\Util;
 
 abstract class PathUtil
 {

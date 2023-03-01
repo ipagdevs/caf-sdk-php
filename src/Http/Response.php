@@ -1,11 +1,11 @@
 <?php
 
-namespace Yshybashy\Caf\Http;
+namespace Kyc\Caf\Http;
 
-use Yshybashy\Caf\IO\JsonSerializer;
-use Yshybashy\Caf\IO\MutatorInterface;
-use Yshybashy\Caf\IO\SerializerInterface;
-use Yshybashy\Caf\Util\ArrayUtil;
+use Kyc\Caf\IO\JsonSerializer;
+use Kyc\Caf\IO\MutatorInterface;
+use Kyc\Caf\IO\SerializerInterface;
+use Kyc\Caf\Util\ArrayUtil;
 
 class Response
 {

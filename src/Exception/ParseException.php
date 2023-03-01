@@ -1,6 +1,6 @@
 <?php
 
-namespace Yshybashy\Caf\Exception;
+namespace Kyc\Caf\Exception;
 
 class ParseException extends BaseException
 {

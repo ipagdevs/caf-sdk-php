@@ -1,10 +1,10 @@
 <?php
 
-namespace Yshybashy\Caf\Model;
+namespace Kyc\Caf\Model;
 
 use JsonSerializable;
 use Kubinyete\Assertation\Assert;
-use Yshybashy\Caf\Util\ArrayUtil;
+use Kyc\Caf\Util\ArrayUtil;
 
 class TransactionRequest implements JsonSerializable
 {

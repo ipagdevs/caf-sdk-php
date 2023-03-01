@@ -1,8 +1,8 @@
 <?php
 
-namespace Yshybashy\Caf\Exception;
+namespace Kyc\Caf\Exception;
 
-use Yshybashy\Caf\Http\Response;
+use Kyc\Caf\Http\Response;
 use Throwable;
 
 abstract class HttpException extends BaseException

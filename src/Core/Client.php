@@ -1,13 +1,13 @@
 <?php
 
-namespace Yshybashy\Caf\Core;
+namespace Kyc\Caf\Core;
 
 use JsonSerializable;
-use Yshybashy\Caf\Exception\HttpException;
-use Yshybashy\Caf\Http\Client\BaseHttpClient;
-use Yshybashy\Caf\Http\Response;
-use Yshybashy\Caf\IO\SerializerInterface;
-use Yshybashy\Caf\Path\CompositePathInterface;
+use Kyc\Caf\Exception\HttpException;
+use Kyc\Caf\Http\Client\BaseHttpClient;
+use Kyc\Caf\Http\Response;
+use Kyc\Caf\IO\SerializerInterface;
+use Kyc\Caf\Path\CompositePathInterface;
 use Throwable;
 
 abstract class Client implements CompositePathInterface

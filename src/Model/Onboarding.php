@@ -1,8 +1,8 @@
 <?php
 
-namespace Yshybashy\Caf\Model;
+namespace Kyc\Caf\Model;
 
-use Yshybashy\Caf\Util\ArrayUtil;
+use Kyc\Caf\Util\ArrayUtil;
 
 class Onboarding
 {

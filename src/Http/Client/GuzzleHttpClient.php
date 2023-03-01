@@ -1,16 +1,16 @@
 <?php
 
-namespace Yshybashy\Caf\Http\Client;
+namespace Kyc\Caf\Http\Client;
 
 use GuzzleHttp\Client;
 use GuzzleHttp\Exception\ClientException;
 use GuzzleHttp\Exception\ConnectException;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Exception\ServerException;
-use Yshybashy\Caf\Exception\HttpClientException;
-use Yshybashy\Caf\Exception\HttpServerException;
-use Yshybashy\Caf\Exception\HttpTransferException;
-use Yshybashy\Caf\Http\Response;
+use Kyc\Caf\Exception\HttpClientException;
+use Kyc\Caf\Exception\HttpServerException;
+use Kyc\Caf\Exception\HttpTransferException;
+use Kyc\Caf\Http\Response;
 use Psr\Http\Message\StreamInterface;
 use RuntimeException;
 

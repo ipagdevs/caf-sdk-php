@@ -1,6 +1,6 @@
 <?php
 
-namespace Yshybashy\Caf\IO;
+namespace Kyc\Caf\IO;
 
 interface SerializerInterface
 {

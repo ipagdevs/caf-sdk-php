@@ -1,12 +1,12 @@
 <?php
 
-namespace Yshybashy\Caf\Core;
+namespace Kyc\Caf\Core;
 
 use JsonSerializable;
-use Yshybashy\Caf\Http\Response;
-use Yshybashy\Caf\IO\SerializerInterface;
-use Yshybashy\Caf\Path\CompositePathInterface;
-use Yshybashy\Caf\Util\PathUtil;
+use Kyc\Caf\Http\Response;
+use Kyc\Caf\IO\SerializerInterface;
+use Kyc\Caf\Path\CompositePathInterface;
+use Kyc\Caf\Util\PathUtil;
 
 abstract class Endpoint implements CompositePathInterface
 {

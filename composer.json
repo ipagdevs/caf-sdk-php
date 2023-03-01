@@ -1,10 +1,10 @@
 {
-    "name": "yshybashy/caf-sdk-php",
+    "name": "kyc/caf-sdk-php",
     "description": "SDK CAF",
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Yshybashy\\Caf\\": "src/"
+            "Kyc\\Caf\\": "src/"
         }
     },
     "authors": [

@@ -1,8 +1,8 @@
 <?php
 
-namespace Yshybashy\Caf\Core;
+namespace Kyc\Caf\Core;
 
-use Yshybashy\Caf\Core\Environment;
+use Kyc\Caf\Core\Environment;
 
 class CafEnvironment extends Environment
 {

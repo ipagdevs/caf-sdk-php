@@ -1,9 +1,9 @@
 <?php
 
-namespace Yshybashy\Caf\Core;
+namespace Kyc\Caf\Core;
 
-use Yshybashy\Caf\Path\CompositePathInterface;
-use Yshybashy\Caf\Util\PathUtil;
+use Kyc\Caf\Path\CompositePathInterface;
+use Kyc\Caf\Util\PathUtil;
 use UnexpectedValueException;
 
 abstract class Environment implements CompositePathInterface

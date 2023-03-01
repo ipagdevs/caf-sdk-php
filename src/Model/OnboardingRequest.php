@@ -1,9 +1,9 @@
 <?php
 
-namespace Yshybashy\Caf\Model;
+namespace Kyc\Caf\Model;
 
 use JsonSerializable;
-use Yshybashy\Caf\Model\Type;
+use Kyc\Caf\Model\Type;
 
 class OnboardingRequest implements JsonSerializable
 {

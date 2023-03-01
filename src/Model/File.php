@@ -1,6 +1,6 @@
 <?php
 
-namespace Yshybashy\Caf\Model;
+namespace Kyc\Caf\Model;
 
 use JsonSerializable;
 

@@ -3,11 +3,11 @@
 namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use Yshybashy\Caf\Core\CafClient;
-use Yshybashy\Caf\Model\OnboardingRequest;
-use Yshybashy\Caf\Model\Transaction;
-use Yshybashy\Caf\Model\TransactionRequest;
-use Yshybashy\Caf\Model\Type;
+use Kyc\Caf\Core\CafClient;
+use Kyc\Caf\Model\OnboardingRequest;
+use Kyc\Caf\Model\Transaction;
+use Kyc\Caf\Model\TransactionRequest;
+use Kyc\Caf\Model\Type;
 
 class CafClientTest extends TestCase
 {

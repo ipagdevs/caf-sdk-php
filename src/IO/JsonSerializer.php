@@ -1,8 +1,8 @@
 <?php
 
-namespace Yshybashy\Caf\IO;
+namespace Kyc\Caf\IO;
 
-use Yshybashy\Caf\Exception\ParseException;
+use Kyc\Caf\Exception\ParseException;
 
 class JsonSerializer implements SerializerInterface
 {

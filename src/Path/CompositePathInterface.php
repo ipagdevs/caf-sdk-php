@@ -1,6 +1,6 @@
 <?php
 
-namespace Yshybashy\Caf\Path;
+namespace Kyc\Caf\Path;
 
 interface CompositePathInterface
 {

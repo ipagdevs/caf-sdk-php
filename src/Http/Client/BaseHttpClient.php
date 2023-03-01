@@ -1,8 +1,8 @@
 <?php
 
-namespace Yshybashy\Caf\Http\Client;
+namespace Kyc\Caf\Http\Client;
 
-use Yshybashy\Caf\Http\MakesRequestInterface;
+use Kyc\Caf\Http\MakesRequestInterface;
 
 abstract class BaseHttpClient
 {
