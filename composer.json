@@ -1,12 +1,7 @@
 {
-    "name": "kyc/caf-sdk-php",
+    "name": "ipagdevs/caf-sdk-php",
     "description": "SDK CAF",
     "type": "library",
-    "autoload": {
-        "psr-4": {
-            "Kyc\\Caf\\": "src/"
-        }
-    },
     "authors": [
         {
             "name": "Daniel Ishibashi",
@@ -20,6 +15,11 @@
     "require-dev": {
         "symfony/var-dumper": "^5.4",
         "phpunit/phpunit": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Kyc\\Caf\\": "src/"
+        }
     },
     "autoload-dev": {
         "psr-4": {
