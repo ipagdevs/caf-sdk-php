@@ -2,6 +2,7 @@
     "name": "ipagdevs/caf-sdk-php",
     "description": "SDK CAF",
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
             "name": "Daniel Ishibashi",
