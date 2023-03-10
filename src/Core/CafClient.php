@@ -14,10 +14,10 @@ class CafClient extends Client
 {
     protected string $authorizationKey;
 
-    public function __construct(string $authorizationKey)
+    public function __construct(string $authorizationKey, bool $production = true)
     {
         parent::__construct(
-            new CafEnvironment(),
+            new CafEnvironment($production),
             new GuzzleHttpClient(),
             new JsonSerializer()
         );
@@ -44,14 +44,14 @@ class CafClient extends Client
         return $response;
     }
 
-    public function getTransactions(array $query = []): array
+    public function getTransactions(array $query = [], string $origin = "TRUST"): array
     {
+        $query['origin'] = $origin;
         $data = $this->get(
             "/v1/transactions",
             $query,
             ['Authorization' => $this->authorizationKey]
         );
-
         $response = array_map(
             fn (array $item) => new Transaction($item),
             $data->getParsedPath('items')
@@ -64,7 +64,7 @@ class CafClient extends Client
     {
         $data = $this->get(
             "/v1/transactions/$id",
-            [],
+            ['origin' => 'TRUST'],
             ['Authorization' => $this->authorizationKey]
         );
 
@@ -81,7 +81,6 @@ class CafClient extends Client
             ['origin' => 'TRUST'],
             ['Authorization' => $this->authorizationKey]
         );
-
         $response = new Onboarding($data->getParsed());
 
         return $response;

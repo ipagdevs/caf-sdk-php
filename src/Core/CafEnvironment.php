@@ -6,8 +6,11 @@ use Kyc\Caf\Core\Environment;
 
 class CafEnvironment extends Environment
 {
-    public function __construct()
+    private const PROD_URL = 'https://api.combateafraude.com';
+    private const BETA_URL = 'https://api.beta.combateafraude.com';
+
+    public function __construct(bool $production = true)
     {
-        parent::__construct('https://api.combateafraude.com');
+        parent::__construct($production ? self::PROD_URL : self::BETA_URL);
     }
 }
