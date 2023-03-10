@@ -38,4 +38,23 @@ abstract class ArrayUtil
             }
         }
     }
+
+    public static function array_filter_recursive(array $input, $checkBoolean = false): array
+    {
+        foreach ($input as &$value) {
+            if (is_array($value)) {
+                $value = self::array_filter_recursive($value, $checkBoolean);
+            }
+        }
+
+        if ($checkBoolean) {
+            return array_filter($input, static function ($var) {
+                return $var !== null;
+            });
+        }
+
+        return array_filter($input, function ($value) {
+            return (isset($value) && $value != '');
+        });
+    }
 }

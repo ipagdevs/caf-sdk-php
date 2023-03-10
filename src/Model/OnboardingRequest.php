@@ -4,22 +4,22 @@ namespace Kyc\Caf\Model;
 
 use JsonSerializable;
 use Kyc\Caf\Model\Type;
+use Kyc\Caf\Util\ArrayUtil;
 
 class OnboardingRequest implements JsonSerializable
 {
-
     protected Type $type;
     protected string $transactionTemplateId;
 
     protected array $attributes;
     protected array $variables;
-    protected string $email;
+    protected string $email = '';
 
-    protected ?bool $noExpire = true;
-    protected ?string $transactionQsaTemplateId;
-    protected ?string $transactionPFTemplateId;
-    protected ?string $templateId;
-    protected ?string $smsPhoneNumber;
+    protected bool $noExpire = true;
+    protected ?string $transactionQsaTemplateId = null;
+    protected ?string $transactionPFTemplateId = null;
+    protected ?string $templateId = null;
+    protected ?string $smsPhoneNumber = null;
 
     public function __construct(Type $type, string $transactionTemplateId)
     {
@@ -96,17 +96,19 @@ class OnboardingRequest implements JsonSerializable
 
     public function jsonSerialize()
     {
-        return [
-            "type" => $this->type,
-            "transactionTemplateId" => $this->transactionTemplateId,
-            "templateId" => $this->templateId,
-            "transactionPFTemplateId" => $this->transactionPFTemplateId,
-            "transactionQsaTemplateId" => $this->transactionQsaTemplateId,
-            "email" => $this->email,
-            "smsPhoneNumber" => $this->smsPhoneNumber,
-            "noExpire" => $this->noExpire,
-            "variables" => (object) $this->variables,
-            "attributes" => $this->attributes
+        $data = [
+            "type"                      => $this->type,
+            "transactionTemplateId"     => $this->transactionTemplateId,
+            "templateId"                => $this->templateId,
+            "transactionPFTemplateId"   => $this->transactionPFTemplateId,
+            "transactionQsaTemplateId"  => $this->transactionQsaTemplateId,
+            "email"                     => $this->email,
+            "smsPhoneNumber"            => $this->smsPhoneNumber,
+            "noExpire"                  => $this->noExpire,
+            "variables"                 => (object) $this->variables,
+            "attributes"                => $this->attributes
         ];
+
+        return ArrayUtil::array_filter_recursive($data, true);
     }
 }
