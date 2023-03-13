@@ -23,7 +23,6 @@ class TransactionRequest implements JsonSerializable
         $this->callbackUrl = null;
     }
 
-
     public function getTemplateId(): string
     {
         return $this->templateId;
